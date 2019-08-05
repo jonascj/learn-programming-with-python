@@ -1,0 +1,35 @@
+div.sphinxsidebar p.caption {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+div.toctree-wrapper p.caption {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+ol.arabic li:not(:first-child) {
+    margin-top:40px;
+}
+
+/*
+ol.arabic {
+  counter-reset: steps;                
+  list-style-type: none;
+}
+
+ol.arabic li::before {
+  counter-increment: steps;
+  content: counter(steps);
+  font-size: 24px;
+  border-radius: 50%;
+  border: 2px solid black;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  text-align: center;
+  vertical-align: middle;
+  float: left;
+*/
