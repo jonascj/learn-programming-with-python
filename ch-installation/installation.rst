@@ -267,6 +267,20 @@ Det kan installeres med følgende kommando:
     Do you want to continue? [Y/n] y
     <output skipped>
 
+Ubuntu indeholder heller ikke et grafikbibliotek kaldet *tkinter*
+som bruges af Python til forskellige grafiske opgaver.
+Det kan installeres med følgende kommando:
+
+.. code-block:: sh
+
+    $ sudo apt install python3-tk
+    <output skipped>
+    Do you want to continue? [Y/n] y
+    <output skipped>
+
+
+
+
 I Ubuntu 16.04 og 18.04 kan du installere nyere Python versioner på følgende:
 
 #. Tilføj en såkaldt såkaldt *Personal Package Archive* (PPA).
