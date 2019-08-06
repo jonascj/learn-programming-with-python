@@ -17,7 +17,7 @@ import sys
 
 # -- Project information -----------------------------------------------------
 
-project = 'Lær programmering med Python'
+project = 'Lær Programmering Med Python'
 copyright = '2019, Jonas Camillus Jeppesen'
 author = 'Jonas Camillus Jeppesen'
 
@@ -27,15 +27,11 @@ author = 'Jonas Camillus Jeppesen'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinxcontrib.bibtex',
-              'sphinxcontrib.images']
 
 extensions = ['sphinxcontrib.images']
 
 master_doc = 'index'
 
-#extensions = ['sphinxcontrib.bibtex']
-#extensions = [ 'sphinxcontrib.inlinesyntaxhighlight' ]
 # use language set by highlight directive if no language is set by role
 #inline_highlight_respect_highlight = False
 # use language set by highlight directive if no role is set
