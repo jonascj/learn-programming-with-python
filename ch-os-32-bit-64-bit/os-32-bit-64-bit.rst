@@ -1,18 +1,8 @@
-#######
-Diverse
-#######
-
-Her er en samling af diverse emner som ikke passer andre steder.
-Typisk løsningen på små tekniske opgaver 
-eller svar på spørgsmål
-som er nyttig flere andre steder i bogen.
-
-
 .. _sec-os-32-bit-64-bit:
 
-**********************************
+##################################
 32-bit eller 64-bit operativsystem
-**********************************
+##################################
 
 Alle programmer, også operativsystemer som Windows, Linux og macOS,
 er bygget til at blive afviklet på en bestemt type hardware,
@@ -44,9 +34,9 @@ så man kan downloade den korrekte version af andre programmer.
     håndtere dette automatisk.
     
 
-
+**********
 Windows 10 
-==========
+**********
 Om en installation af Windows 10 bygget til 32-bit (x86 / i386 / IA-32)
 eller 64-bit (x86-64 / AMD64) afgøres på følgende måde:
 
@@ -82,9 +72,10 @@ ellers download 32-bit udgaven.
 Teksten ``32-bit operativsystem`` indikerer at Windows er bygget til 32-bit / x86 / IA-32.
 Et 32-bit Windows kan kun afvikle 32-bit programmer, download derfor 32-bit versioner af programmer.
 
-
+**************
 macOS og  OS X 
-==============
+**************
+macOS og  OS X 
 Kort fortalt afgør versionen af macOS / OS X om en Mac-computer
 kan afvikle 32-bit programmer, 64-bit programmer eller begge dele.
 
@@ -112,9 +103,9 @@ understøttes kun 64-bit programmer [#macrumor-32bit]_ [#wiki-macos-10.15]_.
 Altså, download og installer 64-bit versioner af programmer,
 med mindre du benytter Mac OS X 10.6 eller tidligere.
 
-
+*****
 Linux
-=====
+*****
 Mange Linux-distributioner findes i både x86/i386/IA-32 (32-bit)
 og x86-64/AMD64 (64-bit) udgave.
 

@@ -118,9 +118,10 @@ som ikke direkte er relateret til Python-programmering.
 .. toctree::
     :caption: Appendiks
     :numbered: 2
+
     :maxdepth: 2
 
-    ch-misc/misc
+    ch-os-32-bit-64-bit/os-32-bit-64-bit
     ch-os-cli/os-cli
     ch-os-filesystem-hierarchy/os-filesystem-hierarchy
 
