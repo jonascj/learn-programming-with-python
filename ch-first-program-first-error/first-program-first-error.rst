@@ -6,18 +6,24 @@
 Første Python-program og første fejl
 ####################################
 
-Der er flere forskellige måder at skrive og afvikle
-et Python-program på.
+Nu hvor du har installeret en Python-fortolker,
+som kan forstå de programmer du skriver,
+og en teksteditor så du kan skrive programmer,
+er du klar til at skrive dit første program.
 
-Afsnittet her viser ...
+Vælg om du vil skrive dit :ref:`sec-first-program-idle`
+eller om du vil skrive dit :ref:`sec-first-program-atom`.
 
-Endnu flere måder gennemgåes senere i afsnit ...
+Det anbefales at starte med IDLE.
+
+****
+IDLE
+****
 
 .. _sec-first-program-idle:
 
-***********************
 Første program med IDLE
-***********************
+=======================
 
 #.  Åbn programmet IDLE,
     det blev installeret sammen med Python-fortolkeren 
@@ -66,7 +72,9 @@ Første program med IDLE
 
     .. seealso::
         :ref:`sec-os-filesystem-hierarchy` for mere information
-        omkring hvordan operativsystemer organisere mapper og filer.
+        omkring hvordan operativsystemer organiserer mapper og filer,
+        og hvordan du bedst organiserer dine Python-filer.
+        
 
     Når filen er gemt vises filens navn og sti i toppen af vinduet.
 
@@ -100,9 +108,9 @@ Første program med IDLE
 
 .. _sec-first-error-idle:
 
-********************
 Første fejl med IDLE
-********************
+====================
+
 En stor del af at lære at programmere, 
 og programmere når du har lært det,
 er at lave fejl.
@@ -216,36 +224,242 @@ Syntaksfejl
     Syntaksfejl kan være sværere at rette fordi fejlen
     ofte indikere en anden linje end der hvor vi som programmører
     har skrevet noget andet end vi tænkte eller glemt noget. 
+    
+    Det er en smule teknisk at forstå hvorfor fortolkeren
+    siger der er fejl i linje 2 og ikke linje 1 hvor vi slettede parentesen.
 
-    Fordi vi har slettet slutparentesen i linje 1,
-    er det let at tænke fejlen findes i linje 1,
-    men Python/IDLE meddeler fremhæver linje 2.
+    Den korte forklaring er, at linje 1 i visse tilfælde er gyldig Python-kode
+    og derfor vælger fortolkeren at sige det er linje 2 som indeholder fejlen.
 
-    Hvis linje 2 havde set ud som her
-    ville linje 1 være gyldig:
+    Hvis programmets linje 2 havde set ud som nedenfor, 
+    ville linje 1 være gyldig.
 
-     .. code-block:: py
+    .. code-block:: py
         :linenos:
         :emphasize-lines: 2 
 
         print("Python"
-              " rocks!")
+              " rocks!)
 
+    Fortolkeren kan altså ikke vide om vi glemte at skrive ``)`` i linje 1
+    eller kom til at skrive ``print(2+2)`` 
+    i stedet for f.eks. `` rocks!)`` i linje 2.
 
-    Da Python-fortolkeren læser linje 1 før linje 2
-    bliver `print` i linje 2 fremhævet som stedet fejlen er,
-    men vi som programmører vil måske sige vi lavede fejlen i linje 1.
+    .. important::
+        Ved ``SyntaxError`` er kan programmørens fejl/forglemmelse
+        sagtens findes på en af linjerne før den linje som fejlen angiver.
+        Tjek derfor altid linjerne over der hvor fejlen meldes.
 
  
     
 
+
+****
+Atom
+****
+
 .. _sec-first-program-atom:
 
-***********************
 Første program med Atom
-***********************
+=======================
+
+#.  Åbn programmet *Atom* 
+    som blev installeret i :ref:`sec-install-atom`.
+
+    Åbn en ny tom fil med genvejen ``[ctrl]``\ +\ ``[N]`` (Windows og Linux)
+    eller ``[⌘]``\ +\ ``[n]`` (macOS).
+
+    Skriv følgende to linjers kode i det tomme vindue, 
+    dit første Python-program:
+
+    .. code-block:: py
+
+        print("Python")
+        print("2+2")
 
 
+    .. image:: figs/atom-untitled-program-ubuntu1804.png
+        :align: center
+        :width: 100%
 
 
+#.  Gem filen ved at trykke ``[ctrl]``\ +\ ``S`` (Windows og Linux)
+    eller ``[⌘]``\ +\ ``[S]`` (macOS).
+
+    Gem filen et fornuftigt sted, lav f.eks. en mappe kaldet ``programmering``
+    og gem filen under den mappe med navnet ``my_first_program.py``.
+
+    Brug mappe- og filnavne uden mellemrum.
+    Hvis navnet består af mange ord kan de adskilles af underscores ``_``.
+
+    .. seealso::
+        :ref:`sec-os-filesystem-hierarchy` for mere information
+        omkring hvordan operativsystemer organiserer mapper og filer,
+        og hvordan du bedst organiserer dine Python-filer.
+
+    .. image:: figs/atom-saved-program-ubuntu1804.png
+        :align: center
+        :width: 100%
+
+    Når filen er gemt ændrer Atom-vinduet udseende. 
+    Navnet på din fil står i filens faneblad
+    og der åbner et nyt panel *Project*
+    som viser filer i den mappe hvor din fil er gemt.
+    
+    Nu hvor filen har fået en navn med endelsen `.py` genkender
+    Atom filen som en Python-fil og highlighter (farver) koden
+    så den er lettere at læse.
+
+#.  Nu er der to måder at afvikle/køre/udføre Python-programmet
+    du har skrevet. 
+
+    1.  Vha. *script*-pakken: 
+        Tryk ``[ctrl]``\ +\ ``[shift]``\ +\ ``[b]`` (Windows og Linux)
+        eller ``[⌘]``\ +\ ``[i]`` (macOS)
+
+         .. thumbnail:: figs/atom-script-success-ubuntu1804.png
+             :width: 70%
+             :align: center
+
+        Programmets output vises i et nyt panel i bunden af vinduet,
+        i dette filfælde tekste ``Python`` og teksten ``4``
+        på hver sin linje.
+
+        Hvis du ikke ser noget output eller output med
+        ord som ``Traceback`` og ``Error`` så er der højest sandsynligt
+        en fejl i dit program.
+        Gå til :ref:`sec-first-error-atom`.
+
+        .. note::
+
+            Hvis du ændrer filen skal du gemme ændringerne før du
+            afvikler/kører/udfører programmet igen via *script*-pakken.
+
+    2.  Vha. *atom-python-run*-pakken: Tryk ``[F5]``.
+
+        .. thumbnail:: figs/atom-python-run-success-ubuntu1804.png
+            :width: 70%
+            :align: center
+        
+        Et nyt vindue åbnes og viser outputtet af programmet.
+        I dette tilfælde teksten ``Python`` og teksten ``4``
+        på hver sin linje.
+        
+        Vinduet kan lukkes ved at trykke ``[Enter]``
+        eller ved at lukke vinduet som alle andre vinduer
+        i dit operativsystem 
+        (typisk noget med at trykke på et kryds i hjørnet af vinduet).
+ 
+        Hvis du ikke ser noget output eller output med
+        ord som ``Traceback`` og ``Error`` så er der højest sandsynligt
+        en fejl i dit program.
+        Gå til :ref:`sec-first-error-atom`.
+
+
+.. _sec-first-error-atom:
+
+Første fejl med Atom
+====================
+
+En stor del af at lære at programmere, og programmere når du har lært det,
+er at lave fejl.
+
+Det er derfor vigtigt at vide hvordan man retter fejl i et program.
+Her ser vi på hvordan Python-fejl rapporteres i Atom
+med de to pakker *script* og *atom-python-run*.
+
+#.  Ret dit første program ``my_first_program.py``, eller endnu bedre,
+    opret en kopi af det som heddder ``my_first_error.py``
+    og ret i det, så det ser således ud
+    (slet et ``t`` fra ``print`` linje 1):
+
+     .. code-block:: py
+        :linenos:
+        :emphasize-lines: 1
+
+        prin("Python")
+        print(2+2)
+
+#.  Kør programmet via *script*- eller *atom-python-run*-pakken
+    som beskrevet i :ref:`sec-first-program-atom`.
+    
+    Fejlmeddelelsen vises samme sted som programmets output.
+
+    .. code-block:: text 
+        :linenos:
+
+        Traceback (most recent call last):
+          File "{path}/my_first_program.py", line 1, in <module>
+            prin("Python")
+        NameError: name 'prin' is not defined
+
+    
+    .. thumbnail:: figs/atom-python-run-name-error-ubuntu1804.png
+       :width: 49%
+       :class: align-left
+    
+    .. thumbnail:: figs/atom-script-name-error-ubuntu1804.png
+       :width: 49%
+       :class: align-left
+
+    Fejlmeddelelsen indeholder to vigtige stykker information:
+
+    *   Linje 2 fortæller hvilken fil og på hvilken linje fejlen befinder sig
+        (my_first_program.py, linje 1).
+        *Bemærk* ``{path}`` er stien til din fil.
+    
+    *   Linje 4 fortæller hvilken fejl fortolkeren fandt
+        (NameError, ``prin`` er ikke et navn Python kender).
+
+#.  Ret dit første program igen, eller endnu bedre,
+    opret en kopi af det som hedder ``my_second_error.py``
+    og ret i det, så det ser således ud
+    (slet den sidste parentes i linje 1):
+
+     .. code-block:: py
+        :linenos:
+        :emphasize-lines: 1
+
+        print("Python"
+        print(2+2)
+
+#.  Kør programmet via *script*- eller *atom-python-run*-pakken.
+   
+    Denne gang er fejlmeddelelsen en anden: 
+
+    .. code-block:: text 
+        :linenos:
+
+          File {path}/my_first_program.py", line 2
+            print(2+2)
+                ^
+        SyntaxError: invalid syntax
+
+    Fejlen angives til at være i linje 2, 
+    der er endda en ``^`` som peger på ``t`` i ``print``.
+
+    Det er en smule teknisk at forstå hvorfor fortolkeren
+    siger der er fejl i linje 2 og ikke linje 1 hvor vi slettede parentesen.
+
+    Den korte forklaring er, at linje 1 i visse tilfælde er gyldig Python-kode
+    og derfor vælger fortolkeren at sige det er linje 2 som indeholder fejlen.
+
+    Hvis programmets linje 2 havde set ud som nedenfor, 
+    ville linje 1 være gyldig.
+
+    .. code-block:: py
+        :linenos:
+        :emphasize-lines: 2 
+
+        print("Python"
+              " rocks!)
+
+    Fortolkeren kan altså ikke vide om vi glemte at skrive ``)`` i linje 1
+    eller kom til at skrive ``print(2+2)`` 
+    i stedet for f.eks. `` rocks!)`` i linje 2.
+
+    .. important::
+        Ved ``SyntaxError`` er kan programmørens fejl/forglemmelse
+        sagtens findes på en af linjerne før den linje som fejlen angiver.
+        Tjek derfor altid linjerne over der hvor fejlen meldes.
 
