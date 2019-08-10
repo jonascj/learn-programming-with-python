@@ -79,6 +79,17 @@ Windows
 #.  Download Python 3.7.3:
     `Windows x86-64 executable installer <https://www.python.org/ftp/python/3.7.3/python-3.7.3-amd64.exe>`_
 
+    .. seealso::
+        Python 3.8 udgives planlagt 2019-10-21
+        (https://www.python.org/dev/peps/pep-0569/#id6).
+        
+        Fra og med denne version kan IDLE vise linjrenumre i sin teksteditor.
+    
+        Denne feature er dog allerede tilfængelig i Python 3.8 beta3.
+        Det anbefales du installere denne i stedet:
+        
+        `Windows x86-64 3.8.0b3 executable installer 
+        <https://www.python.org/ftp/python/3.8.0/python-3.8.0b3-amd64.exe>`_
 
 #.  Åbn/kør installationsprogrammet ``python-3.7.3-amd64.exe``.
 
@@ -133,6 +144,17 @@ macOS og OS X
 #.  Download Python 3.7.4:
     `macOS 64-bit installer (10.9+) <https://www.python.org/ftp/python/3.7.4/python-3.7.4-macosx10.9.pkg>`_
 
+    .. seealso::
+        Python 3.8 udgives planlagt 2019-10-21
+        (https://www.python.org/dev/peps/pep-0569/#id6).
+        
+        Fra og med denne version kan IDLE vise linjrenumre i sin teksteditor.
+    
+        Denne feature er dog allerede tilfængelig i Python 3.8 beta3.
+        Det anbefales du installere denne i stedet:
+        
+        `macOS 64-bit installer 3.8.0b3 (10.9+) 
+        <https://www.python.org/ftp/python/3.8.0/python-3.8.0b3-macosx10.9.pkg>`_
 
 #.  Åbn/kør installationsprogrammet ved at dobbeltklikke på ``python-3.7.4-macosx10.9.pkg``.
     Klik ``[Continue]`` for at komme videre med installationen.

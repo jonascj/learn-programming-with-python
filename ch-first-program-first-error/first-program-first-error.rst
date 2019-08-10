@@ -120,7 +120,7 @@ Her ser vi på to kategorier af fejl og hvordan de ser ud i IDLE;
 syntaks fejl og alle andre fejl.
 
 Alle andre fejl
-===============
+---------------
 #.  Ændre dit første program ``my_first_program.py``, eller endnu bedre,
     opret en kopi af det som heddder ``my_first_error.py``
     og ændre i det, så det ser således ud
@@ -155,50 +155,10 @@ Alle andre fejl
     i stedet for ``prin``.
 
 
-Visning af linjenumre
-=====================
-
-#.  Da programmet kun består af to linjer er det ikke noget problem
-    at finde linjen som fejlenmeddelelsen omtaler,
-    men havde programmet nu været flere hundrede linjer langt
-    kunne det godt være svært hurtigt at identificere linje 134.
-    Det problem løses ved at slå visning af linjenumre i editoren til.
-
-    .. note:: 
-        Dette kræver Python 3.8.0b3 (beta 3 af 3.8.0) eller
-        muligvis version 3.7.5 når den udkommer.
-
-        I tidligere udgaver af IDLE vises linjenummeret 
-        kun for den linje cursoren står på
-        som ``Ln: x`` i nederste højre hjørne af editoren.
-         
-    Åbn IDLEs indstillinger ved at vælge menuen 
-    ``[Options]`` > ``Configure IDLE`` (Windows og Linux)
-    eller med genvejen ``[⌘]``\ +\ ``,`` (macOS).
-
-    Vælg herefter fanebladet ``[General]``,
-    og sæt flueben ved valgmuligheden ``Show line numbers in new windows [ ]``,
-    tryk ``[Apply]`` og afslut med ``[Ok]``.
-
-    .. image:: figs/idle-windows-settings-line-numbers.png
-        :align: center
-        :scale: 100%
-
-    Indstillingen gælder kun for nye vinduer. 
-    Luk derfor din fil og åbn den igen.
-    Genvejen ``[ctrl]``\ +\ ``O`` (Windows og Linux)
-    eller ``[⌘]``\ +\ ``[O]`` (macOS)
-    åbner åbn-fil-dialogen (det er 'o' som i 'open').
-
-    Editorvinduet ser nu således ud, med linjenumre i venstre side.
-
-    .. image:: figs/idle-windows-file-window-with-line-numbers.png
-        :align: center
-        :scale: 100%
-    
+   
 
 Syntaksfejl
-===========
+-----------
 
 #.  Ændre dit første program ``my_first_program.py``, eller endnu bedre,
     opret en kopi af det som heddder ``my_first_syntax_error.py``
@@ -251,8 +211,12 @@ Syntaksfejl
         Tjek derfor altid linjerne over der hvor fejlen meldes.
 
  
-    
+Indstilling af IDLE 
+===================
+Følgende indstillinger kan med fordel foretages eller overvejes
+inden du går videre med bogen:
 
+:ref:`sec-editor-idle-linenumbers`
 
 ****
 Atom
@@ -410,7 +374,6 @@ med de to pakker *script* og *atom-python-run*.
     
     *   Linje 4 fortæller hvilken fejl fortolkeren fandt
         (NameError, ``prin`` er ikke et navn Python kender).
-
 #.  Ret dit første program igen, eller endnu bedre,
     opret en kopi af det som hedder ``my_second_error.py``
     og ret i det, så det ser således ud
@@ -462,4 +425,11 @@ med de to pakker *script* og *atom-python-run*.
         Ved ``SyntaxError`` er kan programmørens fejl/forglemmelse
         sagtens findes på en af linjerne før den linje som fejlen angiver.
         Tjek derfor altid linjerne over der hvor fejlen meldes.
+
+Indstilling af Atom
+===================
+Følgende indstillinger kan med fordel foretages eller overvejes
+inden du går videre med bogen:
+
+:ref:`sec-editor-atom-theme`
 

@@ -106,8 +106,8 @@ som ikke direkte er relateret til Python-programmering.
 
 .. toctree::
     :caption: Indhold
-    :numbered: 2
-    :maxdepth: 2
+    :numbered: 3 
+    :maxdepth: 3 
 
     ch-installation/installation
     ch-first-program-first-error/first-program-first-error
@@ -117,13 +117,14 @@ som ikke direkte er relateret til Python-programmering.
 
 .. toctree::
     :caption: Appendiks
-    :numbered: 2
-
-    :maxdepth: 2
+    :numbered: 3 
+    :maxdepth: 3 
 
     ch-os-32-bit-64-bit/os-32-bit-64-bit
     ch-os-cli/os-cli
     ch-os-filesystem-hierarchy/os-filesystem-hierarchy
+    ch-editor-atom/editor-atom
+    ch-editor-idle/editor-idle
 
 
 .. rubric:: Fodnoter
