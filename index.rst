@@ -120,7 +120,7 @@ som ikke direkte er relateret til Python-programmering.
     :numbered: 3 
     :maxdepth: 3 
 
-    ch-os-32-bit-64-bit/os-32-bit-64-bit
+    ch-os-misc/os-misc
     ch-os-cli/os-cli
     ch-os-filesystem-hierarchy/os-filesystem-hierarchy
     ch-editor-atom/editor-atom
