@@ -4,7 +4,7 @@
 Lær programmering med Python
 ############################
 
-.. image:: figs/python-logo-master-v3-TM.png 
+.. image:: figs/python-logo-master-v3-TM.png
     :align: center
     :scale: 100%
     :target: https://python.org/
@@ -16,9 +16,9 @@ Kort introduktion til programmering
 Computerprogrammering er en process eller disciplin
 som handler om at designe og bygge computerprogrammer.
 
-Et computerprogram er en samling af instruktioner 
-som løser en specifik opgave 
-når de udføres af en computer.  
+Et computerprogram er en samling af instruktioner
+som løser en specifik opgave
+når de udføres af en computer.
 Eksempler på instruktioner kunne være:
 
 * Tegn et kvadrat på skærmen
@@ -26,12 +26,12 @@ Eksempler på instruktioner kunne være:
 * Vent på der trykkes på en tast på tastaturet
 * Afspil lyd
 * Send data (tekst, billeder, tal osv.) over netværket til en anden computer
-* Tjek om to værdier er ens 
+* Tjek om to værdier er ens
 * Udregn et regnestykke
 
 Alle computerprogrammer består af instruktioner
 som disse i passende rækkefølge;
-computerspil, 
+computerspil,
 webbrowsere, tekstbehandlingsprogrammer
 osv.
 
@@ -45,7 +45,7 @@ f.eks. *Python*.
 Python
 ******
 
-*Python* [#python-name]_ er 
+*Python* [#python-name]_ er
 et af verdens mest populære programmeringssprog [#python-popularity]_.
 Alment kendte programmer eller services som bruger Python i stort omfang
 inkluderer:
@@ -56,13 +56,13 @@ inkluderer:
         :target: https://en.wikipedia.org/wiki/Spotify
 
 
-* Instagrams website er skrevet i Python 
+* Instagrams website er skrevet i Python
   (frameworket `Django <https://www.djangoproject.com/>`_)
   [#instagram-use-python]_.
 
     .. image:: figs/Instagram_logo.svg.png
         :scale: 50%
-        :target: https://en.wikipedia.org/wiki/Instagram 
+        :target: https://en.wikipedia.org/wiki/Instagram
 
 
 * Dropbox er skrevet primært i Python [#dropbox-use-python]_.
@@ -83,13 +83,13 @@ Machine Learning, spil og uddannelse [#python-usage]_.
 Lær programmering med Python
 ****************************
 
-Formålet med bogen her er at lære dig 
-at programmere en computer vha. Python. 
+Formålet med bogen her er at lære dig
+at programmere en computer vha. Python.
 Det antages, at du aldrig har skrevet og bygget computerprogrammer før.
 Bogen begynder således helt fra bunden.
 Det antages dog, at du har et vist kendskab til din egen computer.
 
-Bogen kan læses ved at læse 
+Bogen kan læses ved at læse
 de nummererede kapitler i numerisk rækkefølge.
 Steder hvor det kan give mening at sprige rundt i bogen
 vil være markerede.
@@ -99,15 +99,15 @@ Derfor indeholder flere kapitler afsnit målrettet
 hvert af de tre operativsystemer.
 
 Bogen indeholder også en række appendikser
-der vil blive henvist til relevante steder. 
-Det er typisk løsningen på tekniske opgaver 
+der vil blive henvist til relevante steder.
+Det er typisk løsningen på tekniske opgaver
 som ikke direkte er relateret til Python-programmering.
 
 
 .. toctree::
     :caption: Indhold
-    :numbered: 3 
-    :maxdepth: 3 
+    :numbered: 3
+    :maxdepth: 3
 
     ch-installation/installation
     ch-first-program-first-error/first-program-first-error
@@ -117,26 +117,27 @@ som ikke direkte er relateret til Python-programmering.
 
 .. toctree::
     :caption: Appendiks
-    :numbered: 3 
-    :maxdepth: 3 
+    :numbered: 3
+    :maxdepth: 3
 
     ch-os-misc/os-misc
     ch-os-cli/os-cli
     ch-os-filesystem-hierarchy/os-filesystem-hierarchy
     ch-editor-atom/editor-atom
     ch-editor-idle/editor-idle
+    ch-database/sqlite
 
 
 .. rubric:: Fodnoter
 
-.. [#python-name] Navnet Python kommer af Monty Python 
+.. [#python-name] Navnet Python kommer af Monty Python
     og skal derfor udtales som python (slægt af slanger) udtales
-    på engelsk. 
+    på engelsk.
 
-.. [#python-popularity] 
+.. [#python-popularity]
     https://stackoverflow.blog/2017/09/06/incredible-growth-python/
 
-.. [#spotify-use-python] 
+.. [#spotify-use-python]
     https://labs.spotify.com/2013/03/20/how-we-use-python-at-spotify/
 
 .. [#instagram-use-python]
