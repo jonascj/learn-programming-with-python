@@ -36,3 +36,23 @@ ser Atom nu således ud:
    :align: center
 
 
+****************************
+Working directory for Python
+****************************
+
+.. admonition:: TODO
+    
+    Working directory for Python afhænger af opsætningen af script.
+    Som standard er det et *projektbibliotek*,
+    men det kan ændres til at være mappen hvor scriptet befinder sig.
+
+
+**************************************
+Python3 i stedet for Python2.7 i macOS
+**************************************
+
+.. admonition:: TODO
+    `python` i macOS's path peger som standard på en python 2.7 fortolker.
+    Derfor benytter både ``atom-python-run`` og ``script`` pakkerne
+    python2.7 som standard på macOS. 
+    Skriv her hvordan det ændres.
