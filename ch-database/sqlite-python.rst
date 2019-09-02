@@ -1,5 +1,7 @@
+.. _sec-sqlite-python:
+
 ===============================
-Databaser med sqlite i python
+Databaser med SQLite i python
 ===============================
 .. sidebar:: sqlite i python
 
@@ -20,7 +22,7 @@ Arbejdsgangen
 
 Når man skal bruge en database i et program, er arbejdsgangen typisk noget, der minder om det du kan se på figuren herunder:
 
-.. image:: figs\dbflow.png
+.. image:: figs/dbflow.png
   :alt: Den typiske arbejdsgang ved brug af databaser.
 
 (Der skal selvfølgelig kun oprettes tabeller første gang databasen bruges.)

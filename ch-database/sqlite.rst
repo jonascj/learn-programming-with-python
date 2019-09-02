@@ -1,21 +1,13 @@
-================================
-Databaser
-================================
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Indhold:
+.. _sec-sql:
 
-.. sidebar:: Introduktion
-
-   Her kan du læse lidt generelt om hvad en database er. Det er kun ment som en hurtig introduktion, og formålet er, at du til sidst kan komme igang med at bruge sqlite-databaser i dit python-program.
-
-I de fleste IT-systemer udgør databasen en væsentlig del af infrastrukturen. Rigtig mange af de hjemmesider og apps du bruger hver eneste dag, er intet andet end opsamling og videreformidling af data, og uden databasen var der simpelthen ikke nogen værdi i systemet.
-
+######################
+Relationelle databaser
+######################
 
 De mest almindelige databaser er såkaldte *relationelle databaser*, og det betyder at de gemmer data lidt på samme måde som man ville have det stående i et regneark. Her kan du se et eksempel på noget data om guitarer.
 
-.. figure:: _static\table1.png
+.. figure:: figs/table1.png
   :alt: En databasetabel om guitarer.
 
   Figur 1: En databasetabel om forskellige guitarmodeller.
@@ -32,7 +24,7 @@ Tilføjelse af rækker
 
 ..
 
-.. figure:: _static\table1withinsert.png
+.. figure:: figs/table1withinsert.png
   :alt: En databasetabel udvides med en række.
 
   Figur 2: Der tilføjes en ny række til tabellen.
@@ -44,7 +36,7 @@ Læsning af rækker
 
 ..
 
-.. figure:: _static\table1select.png
+.. figure:: figs/table1select.png
   :alt: Udvalg af rækker
 
   Figur 3: Alle guitarer fra Fender er udvalgt fra tabellen
@@ -123,7 +115,7 @@ Den lille stjerne (**\***) efter SELECT angiver, at man ønsker at se alle kolon
 
 Dette giver et resultat som kun er en del af tabellen fra Figur 2.
 
-.. figure:: _static\table1columns.png
+.. figure:: figs/table1columns.png
   :alt: To kolonner er udvalgt.
 
   Figur 4: Her er der udvalgt to kolonner fra tabellen. Resultatet er i sig selv en tabel.
@@ -164,11 +156,7 @@ Det kan være nyttigt at begrænse kommandoen til kun at slette en enkelt række
 
   DELETE FROM guitarmodeller WHERE producent = 'Fender' LIMIT 1;
 
-
-.. note::
-  Her slutter artiklen om databaser og SQL. Du kan fortsætte med at læse om sqlite i python på `denne side`_.
-
-  Du kan også gå videre og læse om lidt mere `avancerede koncepter`_.
-
-.. _denne side: sqlitepython.html
-.. _avancerede koncepter: sqliteadvanced.html
+.. seealso::
+    :ref:`sec-sqlite-python` og :ref:`sec-sql-advanced`.    
+    
+    

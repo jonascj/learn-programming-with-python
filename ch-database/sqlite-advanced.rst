@@ -1,6 +1,9 @@
-===============================
-SQL - Avancerede koncepter
-===============================
+
+.. _sec-sql-advanced:
+
+==========================
+Avancerede koncepter i SQL
+==========================
 .. sidebar:: SQL og databaser
 
   Denne side bygger videre på den generelle artikel om databaser, som du kan se `her`_.
@@ -27,7 +30,7 @@ En-til-mange relation
 
 Tidligere har vi kigget på en databasetabel som den på Figur 1.
 
-.. figure:: _static\table1ekstra.png
+.. figure:: figs/table1ekstra.png
   :alt: En databasetabel om guitarer.
 
   Figur 1: En databasetabel om forskellige guitarmodeller.
@@ -36,7 +39,7 @@ Tidligere har vi kigget på en databasetabel som den på Figur 1.
 
 Lad os se på den kolonne der hedder producent. Her kan vi se at den samme producent går igen hos flere guitarmodeller. Det kalder man for en **én-til-mange relation** (En producent har mange guitarmodeller). I det tilfælde vil man ofte dele databasen op i to tabeller, som vist på figur 2. I den første tabel er kolonnen med producenten skiftet ud med et id, som peger på en række i den nye tabel, som indeholder informationer om producenterne. Kolonnen med henvisning til producenten kaldes for en **foreign key**, fordi den henviser til et id i en anden tabel.
 
-.. figure:: _static\entilmange1.png
+.. figure:: figs/entilmange1.png
   :alt: Tabellen deles op
 
   Figur 2: En-til-mange relation.
@@ -56,7 +59,7 @@ Det næste skridt er et system, hvor der skal være . Du kan for eksempel tænke
 
 Lad os udvide vores guitareksempel med en ny tabel: Guitarister.
 
-.. figure:: _static\mangetilmange1.png
+.. figure:: figs/mangetilmange1.png
   :alt: Der tilføjes en tabel
 
   Figur 3: Guitarer og guitarister.
@@ -69,7 +72,7 @@ Den første tanke kunne være, at inkludere oplysningerne om guitaristerne i tab
 
 Løsningen er i stedet at lave en tredje tabel, der skaber referencer mellem guitaristerne og guitarmodellerne. Den kan ses på figur 4:
 
-.. figure:: _static\mangetilmange2.png
+.. figure:: figs/mangetilmange2.png
   :alt: Mange-til-mange relation
 
   Figur 4: Associationer mellem guitarmodeller og guitarister.
@@ -120,7 +123,7 @@ I dette sidste eksempel skal vi se på hvordan man kan samle data fra flere end 
 
 Vi har nu tre tabeller i spil, og en fjerde tabel der samler oplysningerne. Vi vil samle en tabel som den på Figur 5 herunder.
 
-.. figure:: _static\mangetilmange3.png
+.. figure:: figs/mangetilmange3.png
   :alt: Data fra tre tabeller
 
   Figur 5: Her er der samlet kolonner fra tre forskellige tabeller, vha. indeks fra en fjerde tabel.

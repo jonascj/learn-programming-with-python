@@ -116,6 +116,14 @@ som ikke direkte er relateret til Python-programmering.
 
 
 .. toctree::
+    :caption: Udvalgte emner
+    :numbered: 3
+    :maxdepth: 3
+
+    ch-database/database
+
+
+.. toctree::
     :caption: Appendiks
     :numbered: 3
     :maxdepth: 3
@@ -125,7 +133,6 @@ som ikke direkte er relateret til Python-programmering.
     ch-os-filesystem-hierarchy/os-filesystem-hierarchy
     ch-editor-atom/editor-atom
     ch-editor-idle/editor-idle
-    ch-database/sqlite
 
 
 .. rubric:: Fodnoter
