@@ -10,11 +10,11 @@ De mest almindelige databaser er såkaldte *relationelle databaser*, og det bety
 .. figure:: figs/table1.png
   :alt: En databasetabel om guitarer.
 
-  Figur 1: En databasetabel om forskellige guitarmodeller.
+  En databasetabel om forskellige guitarmodeller.
 
   ..
 
-Sådan en mængde data kalder man en *tabel*, og en database kan bestå af en enkelt eller mange tabeller. Tabellen med guitarmodeller består af fire kolonner: id, navn, producent og årstal. I vores eksempel er der tre rækker; en til hver guitar.
+Sådan en mængde data kalder man en *tabel*, og en database kan bestå af en enkelt eller mange tabeller. Tabellen med guitarmodeller består af fire *kolonner*: id, navn, producent og årstal. I vores eksempel er der tre *rækker*; en til hver guitar.
 
 
 For at kunne arbejde med databasen, skal programmet kunne udføre forskellige typer af kommandoer. De mest basale er **tilføjelse**, **læsning**, **opdatering** og **sletning**.
@@ -27,7 +27,7 @@ Tilføjelse af rækker
 .. figure:: figs/table1withinsert.png
   :alt: En databasetabel udvides med en række.
 
-  Figur 2: Der tilføjes en ny række til tabellen.
+  Der tilføjes en ny række til tabellen.
 
   ..
 
@@ -39,7 +39,7 @@ Læsning af rækker
 .. figure:: figs/table1select.png
   :alt: Udvalg af rækker
 
-  Figur 3: Alle guitarer fra Fender er udvalgt fra tabellen
+  Alle guitarer fra Fender er udvalgt fra tabellen
 
   ..
 
@@ -157,6 +157,4 @@ Det kan være nyttigt at begrænse kommandoen til kun at slette en enkelt række
   DELETE FROM guitarmodeller WHERE producent = 'Fender' LIMIT 1;
 
 .. seealso::
-    :ref:`sec-sqlite-python` og :ref:`sec-sql-advanced`.    
-    
-    
+    :ref:`sec-sqlite-python` og :ref:`sec-sql-advanced`.
