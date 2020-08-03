@@ -8,7 +8,7 @@ Dokumentation til databaser
 ER diagrammer
 -------------
 
-I rigtige systemer kan antallet af databasetabeller let blive meget højt. Tænk på brugerprofiler, opslag, billeder, tags, events osv., og på alle de relationer, der kan være mellem dem. For at kunne overskue hele databasen, kan man bruge en dokumentationsform der hedder et *ER diagram*. I denne artikel kan du læse om ER diagrammer og se eksempler på dem.
+I *rigtige* systemer kan antallet af databasetabeller let blive meget højt. Tænk på brugerprofiler, opslag, billeder, tags, events osv., og på alle de relationer, der kan være mellem dem. For at kunne overskue hele databasen, kan man bruge en dokumentationsform der hedder et *ER diagram*. I denne artikel kan du læse om ER diagrammer og se eksempler på dem.
 
 Entity-Relationship diagram
 ---------------------------
