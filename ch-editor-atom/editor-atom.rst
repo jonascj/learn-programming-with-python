@@ -3,18 +3,33 @@
 .. _sec-editor-atom:
 
 #############
-Atom (editor) 
+Atom (editor)
 #############
 
 
 .. _sec-editor-atom-theme:
+
+***************
+Pakker til atom
+***************
+
+Når du skal arbejde med python i atom, kan du med fordel installere nogle pakker.
+
+Åbn ``Settings`` (indstillinger)
+(Windows/Linux: ``ctrl``\ +\ ``,``, macOS: ``⌘``\ +\ ``,``)
+og vælg fanebladet ``Packages``.
+
+Her kan du søge efter pakker, der kan installeres i atom. Installér følgende tre pakker:
+- atom-python-run
+- python-tools
+- autocomplete-python
 
 ************************
 Skift til lyst farvetema
 ************************
 
 Atom benytter som standard et mørkt farvetema,
-men kommer også med et glimrende lyst farvetema.  
+men kommer også med et glimrende lyst farvetema.
 Farvetemaet kan skiftes på følgende måde:
 
 Åbn ``Settings`` (indstillinger)
@@ -30,7 +45,7 @@ f.eks. ``One Light``.
 
 Med både ``UI Theme`` og ``Syntax Theme`` valgt til ``One Light``
 ser Atom nu således ud:
- 
+
 .. thumbnail:: figs/atom-light-theme.png
    :width: 80%
    :align: center
@@ -41,7 +56,7 @@ Working directory for Python
 ****************************
 
 .. admonition:: TODO
-    
+
     Working directory for Python afhænger af opsætningen af script.
     Som standard er det et *projektbibliotek*,
     men det kan ændres til at være mappen hvor scriptet befinder sig.
@@ -54,5 +69,5 @@ Python3 i stedet for Python2.7 i macOS
 .. admonition:: TODO
     `python` i macOS's path peger som standard på en python 2.7 fortolker.
     Derfor benytter både ``atom-python-run`` og ``script`` pakkerne
-    python2.7 som standard på macOS. 
+    python2.7 som standard på macOS.
     Skriv her hvordan det ændres.
