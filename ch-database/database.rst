@@ -40,4 +40,3 @@ Uden en database ville de ingen værdi være i sådanne systemer.
     sqlite-python
     sqlite-advanced
     er-diagrammer
-    
