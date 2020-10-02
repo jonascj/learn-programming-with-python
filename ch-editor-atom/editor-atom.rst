@@ -52,6 +52,7 @@ Python3 i stedet for Python2.7 i macOS
 **************************************
 
 .. admonition:: TODO
+
     `python` i macOS's path peger som standard på en python 2.7 fortolker.
     Derfor benytter både ``atom-python-run`` og ``script`` pakkerne
     python2.7 som standard på macOS. 
