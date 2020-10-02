@@ -14,7 +14,8 @@ er du klar til at skrive dit første program.
 Vælg om du vil skrive dit :ref:`sec-first-program-idle`
 eller om du vil skrive dit :ref:`sec-first-program-atom`.
 
-Det anbefales at starte med IDLE.
+Er du i tvivl så kan du vælge IDLE, 
+det er det simpleste af de to udviklingsmiljøer.
 
 ****
 IDLE
@@ -111,9 +112,10 @@ Første program med IDLE
 Første fejl med IDLE
 ====================
 
-En stor del af at lære at programmere, 
-og programmere når du har lært det,
-er at lave fejl.
+En stor del af at lære at programmere er at lave fejl,
+skrive kode som ikke virker.
+Det er i øvrigt også en stor del af at programmere 
+selv når du på et tidspunkt har fået mange års erfaring.
 
 Det er derfor vigtigt at vide hvordan man retter fejl i et program.
 Her ser vi på to kategorier af fejl og hvordan de ser ud i IDLE;
@@ -325,8 +327,10 @@ Første program med Atom
 Første fejl med Atom
 ====================
 
-En stor del af at lære at programmere, og programmere når du har lært det,
-er at lave fejl.
+En stor del af at lære at programmere er at lave fejl,
+skrive kode som ikke virker.
+Det er i øvrigt også en stor del af at programmere 
+selv når du på et tidspunkt har fået mange års erfaring.
 
 Det er derfor vigtigt at vide hvordan man retter fejl i et program.
 Her ser vi på hvordan Python-fejl rapporteres i Atom
