@@ -9,9 +9,9 @@ Lær programmering med Python
     :scale: 100%
     :target: https://python.org/
 
-***********************************
-Kort introduktion til programmering
-***********************************
+**********************
+Hvad er programmering?
+**********************
 
 Computerprogrammering er en process eller disciplin
 som handler om at designe og bygge computerprogrammer.
@@ -111,7 +111,7 @@ som ikke direkte er relateret til Python-programmering.
 
     ch-installation/installation
     ch-first-program-first-error/first-program-first-error
-    ch-basic-programming/basic-programming
+    ch-informal-introduction/informal-introduction
     ch-processing-python-mode/processing-python-mode
 
 

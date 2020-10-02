@@ -1,0 +1,8 @@
+Type 37 and press [Enter]: 37
+1337
+50
+50
+Traceback (most recent call last):
+  File "test_data_types.py", line 11, in <module>
+    print(c+e)
+TypeError: can only concatenate str (not "int") to str

@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "test_data_types.py", line 11, in <module>
+    print(c+e)
+TypeError: can only concatenate str (not "int") to str
+Traceback (most recent call last):
+  File "test_data_types.py", line 11, in <module>
+    print(c+e)
+TypeError: can only concatenate str (not "int") to str
+Traceback (most recent call last):
+  File "test_data_types.py", line 11, in <module>
+    print(c+e)
+TypeError: can only concatenate str (not "int") to str
+Traceback (most recent call last):
+  File "test_data_types.py", line 11, in <module>
+    print(c+e)
+TypeError: can only concatenate str (not "int") to str
+Traceback (most recent call last):
+  File "test_data_types.py", line 11, in <module>
+    print(c+e)
+TypeError: can only concatenate str (not "int") to str
+Traceback (most recent call last):
+  File "test_data_types.py", line 11, in <module>
+    print(c+e)
+TypeError: can only concatenate str (not "int") to str
+Traceback (most recent call last):
+  File "test_data_types.py", line 11, in <module>
+    print(c+e)
+TypeError: can only concatenate str (not "int") to str
+Traceback (most recent call last):
+  File "test_data_types.py", line 11, in <module>
+    print(c+e)
+TypeError: can only concatenate str (not "int") to str

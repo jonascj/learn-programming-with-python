@@ -1,0 +1,1 @@
+ffmpeg -i calc.ogv -to 00:00:18.50 -vf "fps=10,crop=iw-10:ih,pad=iw+10:ih+10:(ow-iw)/2:(oh-ih)/2:color=black,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 calc4.gif
