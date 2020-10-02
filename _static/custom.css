@@ -1,3 +1,4 @@
+
 div.sphinxsidebar p.caption {
     font-weight: bold;
     font-size: 18px;
@@ -13,23 +14,43 @@ ol.arabic li:not(:first-child) {
     margin-top:40px;
 }
 
-/*
-ol.arabic {
-  counter-reset: steps;                
-  list-style-type: none;
+
+/* Tweaking / fixing line numbers */
+td.linenos pre, td.code pre {
+    padding: 7px;
 }
 
-ol.arabic li::before {
-  counter-increment: steps;
-  content: counter(steps);
-  font-size: 24px;
-  border-radius: 50%;
-  border: 2px solid black;
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  margin: 10px;
-  text-align: center;
-  vertical-align: middle;
-  float: left;
-*/
+td.linenos pre {
+    color: #666;
+    background: #ddd;
+}
+
+table.highlighttable td.linenos, table.highlighttable td.code {
+    padding: 0;
+    margin: 0;
+}
+
+/* Larger ordered list numbers */
+ol.arabic li::marker {
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.sphinxsidebar li {
+    margin-bottom: 5px;
+}
+
+
+/* Adjust background of inline literals `print()` 
+ * to be visible inside admonitions (warning, note etc.)
+ */
+.admonition code.docutils {
+    background: #fff;
+}
+
+/* Add border to code blocks when used in admonitions 
+ * for easier identification
+ */
+.admonition table.highlighttable {
+    border: 1px solid #ccc;
+}
