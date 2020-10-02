@@ -27,10 +27,16 @@ hvis tilpas mange værktøjer er kombineret i en
 Her gennemgås installation og opsætning af to forkellige udviklingsmiljøer:
 
 1.  Den officielle Python-fortolker *cPython* og medfølgende
-    integeret udviklingsmiljø *IDLE*.
+    integeret udviklingsmiljø *IDLE*:
+
+    :ref:`sec-install-python`
 
 2.  Den oficielle Python-fortolker *cPython* med tredjeparts
     teksteditor/integreret udviklingsmiljø *Atom*.
+
+    :ref:`sec-install-atom`
+
+
 
 Begge opsætninger kræver man starter med :ref:`sec-install-python`.
 
@@ -59,43 +65,20 @@ Vælg din platform og følg installationsinstruktionerne:
 
 :ref:`sec-install-python-linux`
 
-.. note::
-    
-    Installationsinstruktionerne er skrevet da seneste
-    version af Python var 3.7.4.
-
-    Der er dog ingen umiddelbar grund til de ikke skulle gælde
-    for fremtidige Python 3.7.5 og 3.8.x.
-
-    Du kan derfor også opleve, at der står ``Python 3.7.3``
-    i et screenshot, men teksten og din skærm viser et andet versionsnummer. 
-
 
 .. _sec-install-python-win:
 
 Windows
 =======
 
-#.  Download Python 3.7.3:
-    `Windows x86-64 executable installer <https://www.python.org/ftp/python/3.7.3/python-3.7.3-amd64.exe>`_
+#.  Download Python 3.8.6:
+    `Windows x86-64 executable installer <https://www.python.org/ftp/python/3.8.6/python-3.8.6-amd64.exe>`_
 
-    .. seealso::
-        Python 3.8 udgives planlagt 2019-10-21
-        (https://www.python.org/dev/peps/pep-0569/#id6).
-        
-        Fra og med denne version kan IDLE vise linjrenumre i sin teksteditor.
-    
-        Denne feature er dog allerede tilfængelig i Python 3.8 beta3.
-        Det anbefales du installere denne i stedet:
-        
-        `Windows x86-64 3.8.0b3 executable installer 
-        <https://www.python.org/ftp/python/3.8.0/python-3.8.0b3-amd64.exe>`_
-
-#.  Åbn/kør installationsprogrammet ``python-3.7.3-amd64.exe``.
+#.  Åbn/kør installationsprogrammet ``python-3.8.6-amd64.exe``.
 
     .. important::
     
-        Sæt flueben ved valgmuligheden ``[ ] Add Python 3.7 to PATH``.
+        Sæt flueben ved valgmuligheden ``[ ] Add Python 3.8 to PATH``.
     
     Tryk ``Install Now`` for at starte installationen.
 
@@ -141,22 +124,10 @@ Windows
 macOS og OS X
 =============
 
-#.  Download Python 3.7.4:
-    `macOS 64-bit installer (10.9+) <https://www.python.org/ftp/python/3.7.4/python-3.7.4-macosx10.9.pkg>`_
+#.  Download Python 3.8.6:
+    `macOS 64-bit installer (10.9+) <https://www.python.org/ftp/python/3.8.6/python-3.8.6-macosx10.9.pkg>`_
 
-    .. seealso::
-        Python 3.8 udgives planlagt 2019-10-21
-        (https://www.python.org/dev/peps/pep-0569/#id6).
-        
-        Fra og med denne version kan IDLE vise linjrenumre i sin teksteditor.
-    
-        Denne feature er dog allerede tilfængelig i Python 3.8 beta3.
-        Det anbefales du installere denne i stedet:
-        
-        `macOS 64-bit installer 3.8.0b3 (10.9+) 
-        <https://www.python.org/ftp/python/3.8.0/python-3.8.0b3-macosx10.9.pkg>`_
-
-#.  Åbn/kør installationsprogrammet ved at dobbeltklikke på ``python-3.7.4-macosx10.9.pkg``.
+#.  Åbn/kør installationsprogrammet ved at dobbeltklikke på ``python-3.8.6-macosx10.9.pkg``.
     Klik ``[Continue]`` for at komme videre med installationen.
 
     .. thumbnail:: figs/install-python-macos-1.png
@@ -354,7 +325,7 @@ Installation af Atom
 Atom er en multi-platform teksteditor
 med mulighed for installation af pakker/plugins
 til at udvide dens funktionalitet.  
-Den egner sig godt til at skrive Python kode.
+Atom egner sig godt til at skrive Python kode.
 
 Vælg din platform og følg installationsinstruktionerne:
 
@@ -363,6 +334,12 @@ Vælg din platform og følg installationsinstruktionerne:
 :ref:`sec-install-atom-macos`
 
 :ref:`sec-install-atom-linux`
+
+.. note::
+
+    Brug af Atom til afvikling/kørsel af Python-programmer
+    kræver du har installeret en Python-fortolker, se :ref:`sec-install-python`.
+
 
 .. note::
     
