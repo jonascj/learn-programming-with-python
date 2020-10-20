@@ -377,32 +377,186 @@ Måske har du lagt mærke til, at vi indtil nu
 har lavet mange forskellige udgaver af lommeregnerprogrammet
 som gradvist kan mere og mere,
 og som gradvist ligner eksemplet vist i starten mere og mere.
-Det er en meget væsentlig pointe eller observation,
+Det er en meget væsentlig pointe,
 at programmer ikke skrives i deres fulde endelig version
 uden at blive testet og omstruktureret under vejs.
 
-Denne process eller arbejdsmetode hedder 
-*trinvis forbedring* (engelsk: stepwise improvement) ...
+:numref:`fig-console-calc-demo`, 
+en video af et lommeregner program i brug,
+er vores mål eller nogle andres *krav* (engelsk: requirement) til os.
+Videoen *er* en optagelse af et Python-program i brug,
+men den kunne lige så vel være konstrueret i et tegneprogram,
+eller videoen kunne erstattes af en tekstbeskrivelse,
+af en person som ønsker sig et lommeregner program,
+men som ikke selv er i stand til at programmere det.
+Ud fra kravet eller kravene kan vi opstille nogle *specifikationer*,
+f.eks.:
+
+#. Brugeren skal kunne vælge en regneoperation 
+   og operander (tal) til regneoperationen.
+ 
+#. Programmet skal printe et letlæseligt resultat af regneoperationen.
+
+#. Når brugen har udført en beregning skal brugeren tilbydes
+   at lave en ny beregning.
+
+#. Programmet skal vise en letforståelig fejlmeddelelse 
+   når/hvis brugeren angiver en ugyldig operand,
+   f.eks. skriver ordet *hest* i stedet for et tal
+   når brugeren bedes angive a eller b til udregning a+b.
+
+Nogle af specifikationerne beskriver ikke præcist kravene,
+f.eks. viser :numref:`fig-console-calc-demo`
+at brugeren skal kunne vælge regneoperation ved at skrive et tal
+angivet i en oversigt over regneoperationerne,
+men det fremgår ikke af specifikationerne.
+
+:numref:`prg-calc0`, :numref:`prg_calc2` og :numref:`prg_calc3` med flere
+kaldes *implementeringer* af (lommeregner)specifikationerne.
+Ganske som nogle af specifikationerne ikke præcist beskriver kravene,
+så opfylder nogle af implementeringerne ikke specifikationerne,
+f.eks. opfylder implementering :numref:`prg_calc4` specifikation 2 og 3,
+men kun dele af 1 og slet ikke 4.
+
+Vores udviklingsprocess eller arbejdsprocess
+består altså af dele eller skridt
+som udføres i en eller anden rækkefølge
+og som gentages indtil man løber tør for tid eller tilfreds med programmet:
+
+* Omdannelse af krav til specifikationer.
+
+* Implementing af specifikationerne.
+
+* Test af implementeringerne 
+  (tjek programmet kan køre/afvikles og overholder specifikationerne).
+
+* Forbedring af specifikationer der ikke præcist beskriver kravene.
+
+* Forbedring af implementeringer der ikke overholder specifikationerne.
+
+Udviklingsprocessen eller arbejdsmetoden kaldes 
+*trinvis forbedring* (engelsk: stepwise improvement).
+Det er en iterativ process fordi de samme skridt eller delprocesser
+gentages igen og igen.
+
+
+.. admonition:: Udfordring
+
+    * Lav flere specifikationer (end dem som allerede nævnes i teksten)
+      ud fra kravet/kravene.
+
+    * Find flere specifikationer (end dem som allerede nævnes i teksten)
+      som bør forbedres for at beskrive kravene mere præcist.
+
+    * Find flere eksemler (end dem som nævnes i teksten) 
+      på implementeringer (fra kapitlet her)
+      som ikke overholder en eller flere specifikationer.
+
+******************
+Håndtering af fejl
+******************
+Prøv at afvikle programmet fra :numref:`prg_calc6`
+og angiv enten a eller b til et ord som *syv* eller *hest*.
+Du vil da se programmet stoppe med en fejl som denne:
+
+.. code-block:: console 
+    :linenos:
+
+    Traceback (most recent call last):
+      File "<filename>", line <line number>, in <module>
+        a = int(in1)
+    ValueError: invalid literal for int() with base 10: 'hest'
+
+Som det er krav og som en af vores specifikationer lyder
+skal denne brugerfejl, som resulterer i en teknisk fejl,
+håndteres og brugeren se en letlæselig fejlbesked.
+Dette kan gøres vha. en såkaldt **try-except** konstruktion.
+Vi ved fra de fejlmeddelelser vi har set, 
+at det er linjerne som konvertere brugerens input til heltal,
+linjer hvor funktionen ``int()`` kaldes,
+som er årsag til fejlen.
+Derfor placeres de linjer i try-except konstruktionen.
+Linje 11-15 skal læses som: 
+prøv at udføre linje 12 og 13,
+hvis en af de linjer resultere i en fejl af typen ValueError
+så udfør linje 15.
+
+.. literalinclude:: programs/calc7.py
+    :linenos:
+    :caption: calculator.py
+    :name: prg_calc7
+    :emphasize-lines: 11, 14,15
+
+.. literalinclude:: programs/calc7.py.out
+    :language: text
+    :linenos:
+    :caption: output (calculator.py)
+    :emphasize-lines: 4 
+    :name: out_calc7
+
+Som ses fra outputtet har vi lavet en implementering
+som opfylder en specifikation, 
+men som nu gør vi ikke længere opfylder en anden specifikation:
+brugeren ser nu en let læselig fejlmeddelelse
+hvis der indtastes noget som ikke er et tal,
+men brugeren ser en anden svært læselig fejlmeddelse
+og brugeren får ikke mulighed for at udføre en ny beregning (prøve igen).
+
+Den nye fejlmeddelse, af typen NameError,
+kommer fordi variablen ``b`` som forsøges oprettet i linje 13
+ikke bliver oprettet (den fejler med ValueError).
+Når programmet fortsætter efter try-except konstruktionen
+så forsøges linje 17 udført og her skal variablen ``b``,
+som nu ikke er defineret,
+bruges.
+
+Problemet med der opstår en ny fejl kan håndteres på mange måder,
+en af dem kunne være vha. ``break``:
+
+.. literalinclude:: programs/calc8.py
+    :linenos:
+    :caption: calculator.py
+    :name: prg_calc8
+    :emphasize-lines: 16
+
+Denne løsning bryder dog stadig med en af specifikationerne,
+nemlig den at brugeren skal tilbydes at udføre en ny udregning.
+Nu ser vi ganske vist ikke ValueError-fejlen,
+men programmet stopper.
+
+Løsningen er at bytte ``break`` ud med ``continue``
+som betyder stop nuværende iteration af loopet
+og fortsæt til den næste:
+
+.. literalinclude:: programs/calc9.py
+    :linenos:
+    :caption: calculator.py
+    :name: prg_calc9
+    :emphasize-lines: 16
 
 
 
+.. admonition:: Udfordring
 
+    Udvid programmet fra :numref:`prg_calc9`
+    således der gives en særskilt fejlmeddelse
+    for fejlindtastning ved a og b.
 
+.. admonition:: Udfordring
 
-
-
-
-
-
-
+    Brug ``str.format()`` metoden til at
+    få fejlmeddelelsen til at se ud som
+    ``Error choosing operand 'a', your value 'hest' is not a valid number.``
 
 
 .. rubric:: Fodnoter
 
 .. [#numbersign] Tegnet ``#`` hedder ikke et `hashtag <https://en.wikipedia.org/wiki/Hashtag>`_.
-    På engelsk hedder det *hash*, *number sign* eller *pound sign*,
+    På engelsk hedder det *hash* (symbol), *number sign* eller *pound sign*,
     på dansk hedder det `havelåge <https://ordnet.dk/ddo/ordbog?entry_id=11020057&def_id=21031011&query=havel%C3%A5ge>`_.
     eller `dobbeltkryds <https://ordnet.dk/ddo/ordbog?entry_id=11009375&query=havel%C3%A5ge>`_.
+
+
  
 
 

@@ -1,0 +1,8 @@
+Calculate a + b:
+a=2
+b=hest
+Error: a or b was an invalid number
+Traceback (most recent call last):
+  File "calc7.py", line 17, in <module>
+    c = a+b
+NameError: name 'b' is not defined
