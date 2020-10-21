@@ -419,9 +419,8 @@ f.eks. opfylder implementering :numref:`prg_calc4` specifikation 2 og 3,
 men kun dele af 1 og slet ikke 4.
 
 Vores udviklingsprocess eller arbejdsprocess
-består altså af dele eller skridt
-som udføres i en eller anden rækkefølge
-og som gentages indtil man løber tør for tid eller tilfreds med programmet:
+består altså af en række skridt eller delprocesser
+som gentages indtil vi løber tør for tid eller tilfreds med programmet:
 
 * Omdannelse af krav til specifikationer.
 
@@ -430,9 +429,9 @@ og som gentages indtil man løber tør for tid eller tilfreds med programmet:
 * Test af implementeringerne 
   (tjek programmet kan køre/afvikles og overholder specifikationerne).
 
-* Forbedring af specifikationer der ikke præcist beskriver kravene.
+* Forbedring af specifikationer som ikke præcist beskriver kravene.
 
-* Forbedring af implementeringer der ikke overholder specifikationerne.
+* Forbedring af implementeringer som ikke overholder specifikationerne.
 
 Udviklingsprocessen eller arbejdsmetoden kaldes 
 *trinvis forbedring* (engelsk: stepwise improvement).
