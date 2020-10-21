@@ -11,7 +11,7 @@ div.toctree-wrapper p.caption {
 
 
 ol.arabic li:not(:first-child) {
-    margin-top:40px;
+    /*margin-top:40px;*/
 }
 
 
@@ -32,8 +32,14 @@ table.highlighttable td.linenos, table.highlighttable td.code {
 
 /* Larger ordered list numbers */
 ol.arabic li::marker {
-    font-size: 110%;
-    font-weight: bold;
+    /*font-size: 110%;
+    font-weight: bold;*/
+}
+
+/* List vertical spacing */
+.simple li:not(:first-child) {
+    /*margin-top:40px;*/
+    margin-top: 10px;
 }
 
 .sphinxsidebar li {
