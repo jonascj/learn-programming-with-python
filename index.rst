@@ -130,6 +130,7 @@ som ikke direkte er relateret til Python-programmering.
 
     ch-os-misc/os-misc
     ch-os-cli/os-cli
+    ch-git/git
     ch-os-filesystem-hierarchy/os-filesystem-hierarchy
     ch-editor-atom/editor-atom
     ch-editor-idle/editor-idle
