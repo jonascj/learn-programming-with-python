@@ -113,6 +113,7 @@ som ikke direkte er relateret til Python-programmering.
     ch-first-program-first-error/first-program-first-error
     ch-informal-introduction/informal-introduction
     ch-processing-python-mode/processing-python-mode
+    ch-selection/selection
 
 
 .. toctree::
