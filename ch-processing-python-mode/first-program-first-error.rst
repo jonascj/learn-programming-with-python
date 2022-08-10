@@ -34,7 +34,7 @@ at teksten ``Python`` og teksten ``4`` (resultatet af regnestykket ``2+2``)
 bliver printet/vist i Processing-vinduets område (3).
 
 Resultatet af programmes linje 3 og 4 er,
-at der regnes en rød cirkel i et nyt vindue (4).
+at der tegnes en rød cirkel i et nyt vindue (4).
 
 Hvis du ikke ser disse resultater ser du højest sandsynligt en fejl.
 Spring midlertidigt til afsnittet :ref:`sec-first-error-processing`
